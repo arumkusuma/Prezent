@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.jpeg);
+    overflow: hidden;
+}
+
+.tabs input {
+    visibility: hidden;
+    display: none;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10000000;
+}
+
+.buttons label {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.tabs input:nth-child(4):checked ~ .buttons label:nth-child(4),
+.tabs input:nth-child(5):checked ~ .buttons label:nth-child(5),
+.tabs input:nth-child(6):checked ~ .buttons label:nth-child(6),
+.tabs input:nth-child(7):checked ~ .buttons label:nth-child(7),
+.tabs input:nth-child(8):checked ~ .buttons label:nth-child(8) {
+    opacity: 1;
+    width: 50px;
+}
+
+.content {
+    position: relative;
+    width:  1000000vw;
+    display: flex;
+    transition: 0.5s;
+}
+
+.content .box{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 30px;
+}
+
+.tabs input:nth-child(1):checked ~ .content{
+    left: 0;
+}
+
+.tabs input:nth-child(2):checked ~ .content{
+    left: -100vw;
+} 
+
+.tabs input:nth-child(3):checked ~ .content{
+    left: -200vw;
+}
+
+.tabs input:nth-child(4):checked ~ .content{
+    left: -300vw;
+}
+.tabs input:nth-child(5):checked ~ .content{
+    left: -400vw;
+}
+
+.tabs input:nth-child(6):checked ~ .content{
+    left: -500vw;
+} 
+
+.tabs input:nth-child(7):checked ~ .content{
+    left: -600vw;
+}
+
+.tabs input:nth-child(8):checked ~ .content{
+    left: -700vw;
+}
+
+
+.content .box .contentBX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.content .box .contentBX h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Marcellus', serif;
+}
+
+.content .box .contentBX .web2 h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.content .box .contentBX .web2 img{
+    height: 250px;
+    width: auto;
+}
+
+.content .box .contentBX .side img{
+    float: left;
+}
+
+.content .box .contentBX .side p{
+    position: relative;
+}
+
+.content .box .contentBX .pengumuman p{
+    font-size: 0.8rem;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.content .box .contentBX .hiden p{
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+.content .box .contentBX img{
+    height: 300px;
+    width: auto;
+    padding-right: 5px;
+}
+
+.content .box .contentBX p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.content .box .contentBX .nice img{
+    padding-top: 5px;
+}
+
+.content .box .contentBX .dih img{
+    width: 250px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.content .box .contentBX .baikan img{
+    width: 300px;
+    height: auto;
+}
+
+
+@media(max-width: 600px){
+    .content .box .contentBX img{
+        height: 150px;
+        width: auto;
+    }
+    .content .box .contentBX .web2 img{
+        height: 150px;
+        width: auto;
+    }
+    .content .box .contentBX .hah img{
+        height: 170px;
+        width: auto;
+    }
+    .content .box .contentBX .nice img{
+        width: 330px;
+        height: auto;
+    }
+    .content .box .contentBX .dih img{
+        width: 200px;
+        height: auto;
+    }
+    .content .box .contentBX .baikan img{
+        width: 200px;
+        height: auto;
+    }
+    .content .box .contentBX .bolos img{
+        width: 350px;
+        height: auto;
+    }
+    .content .box .contentBX .berantem img{
+        width: 150px;
+        height: auto;
+    }
+    .content .box .contentBX .tambelo img{
+        width: 160px;
+        height: auto;
+        padding-left:25px;
+    }
+    .content .box .contentBX .tidur img{
+        width: 300px;
+        height: auto;
+    }
+    .content .box .contentBX .ig img{
+        width: 350px;
+        height: auto;
+        padding-top: 10px;
+    }
+    .content .box .contentBX .lucu img{
+        width: 250px;
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .content .box .contentBX .akun img{
+        width: 165px;
+        height: auto;
+        padding-top: 10px;
+    }  
+    .content .box .contentBX .foto img{
+        width: 150px;
+        height: auto;
+    } 
+    .content .box .contentBX .fotoo img{
+        width: 170px;
+        height: auto;
+    } 
+    .content .box .contentBX .terbang img{
+        width: 325px;
+        height: auto;
+        padding-top: 10px;
+    } 
+    .content .box .contentBX .dihh img{
+        width: 200px;
+        height: auto;
+        padding-top: 10px;
+    }
+} 
